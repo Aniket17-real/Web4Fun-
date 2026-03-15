@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web 4 fun!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: #f5f5f5; color: #333; font-family: 'Poppins', sans-serif; margin: 0; padding: 0;">
+    
+    <h1 style="text-align: center; font-size: 52px; margin-top: 180px; font-weight: 700; letter-spacing: -1px;">
+      Bored? <br> Let's fix that. 😄
+    </h1>
+
+    <p style="text-align: center; font-size: 18px; color: #888; margin-top: 10px;">
+      Click the button and go somewhere fun!
+    </p>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <button onclick="goRandom()" style="font-size: 18px; padding: 16px 50px; border-radius: 50px; border: 2px solid #333; background-color: transparent; color: #333; cursor: pointer; font-family: 'Poppins', sans-serif;">
+        Take me somewhere 🚀
+      </button>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px;">
+      <a style="font-size: 20px; color: #888; text-decoration: none;" href="file:///D:/My%20website/credit.html">Credits</a>
+    </div>
+
+    <script>
+      function goRandom() {
+        let sites = [
+          "https://www.crazygames.com/",
+          "https://emupedia.net/beta/emuos/",
+          "https://memory.toys/classic/easy/",
+          "https://hackertyper.net",
+          "https://bongo.cat",
+          "https://pointerpointer.com",
+          "https://www.staggeringbeauty.com",
+          "https://www.koalastothemax.com",
+          "https://zoomquilt.org",
+          "https://www.fallingfalling.com",
+          "https://heeeeeeeey.com",
+          "https://www.patience-is-a-virtue.org",
+          "https://www.rrrgggbbb.com",
+          "https://clicking-bad.com",
+          "https://patatap.com"
+        ]
+        let random = sites[Math.floor(Math.random() * sites.length)]
+        window.open(random)
+      }
+    </script>
+
+  </body>
+</html>
